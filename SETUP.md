@@ -14,7 +14,7 @@ In **root directory**
 In **root directory**
 
 ```bash
-  npm i express express-graphql graphql # Required
+  npm i express express-graphql graphql axios # Required
   npm i -D nodemon # Dev Dependency
   npm i cors # Might need
   npm i concurrently # Optional
@@ -47,16 +47,7 @@ In **root directory**
 ```bash
   npx create-react-app client
   cd client
-```
-
-### Install Dependencies
-
-In **/client**
-
-```bash
-  npm i express express-graphql graphql # Required
-  npm i -D nodemon # Dev Dependency
-  npm i cors # Might need
+  npm i classnames moment react-moment react-router-dom # Extras for this project
 ```
 
 ### Edit Files
@@ -96,17 +87,16 @@ In **/client**
 
 In **/client**
 
-  ```bash
-    npm i @apollo/client graphql # Required
-    npm i classnames moment react-moment react-router-dom # Extras for this project
-  ```
+```bash
+  npm i @apollo/client graphql # Required
+```
 
 ---
 
 ### Run Locally
 
-| Location    | Command           | Runs           | URL                             | Access   |
-| :---------- | :--------------   | :------------- | :------------------------------ | :------- |
-| root    |  `npm run server` | **Server**     | *http::/localhost/5000/graphql* | GraphiQL |
-| /client | `npm start`       | **Front End**  | *http::/localhost/3000*         | Site     |
-| root    | `npm run dev`     | **Both**       | *http::/localhost/3000*         | Site     |
+| Location | Command          | Runs         | URL                             | Access   |
+| :------- | :--------------  | :----------- | :------------------------------ | :------- |
+| /root    | `npm run server` | **Server**   | *http::/localhost/5000/graphql* | GraphiQL |
+| /client  | `npm start`      | **Frontdnd** | *http::/localhost/3000*         | Site     |
+| /root    | `npm run dev`    | **Both**     | *http::/localhost/3000*         | Site     |
